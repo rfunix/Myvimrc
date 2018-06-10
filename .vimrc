@@ -20,6 +20,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 "Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'elixir-editors/vim-elixir'
+Plugin 'slashmili/alchemist.vim'
 Plugin 'mhinz/vim-mix-format'
 Plugin 'morhetz/gruvbox'
 Plugin 'vim-airline/vim-airline'
@@ -27,6 +28,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-surround'
 Plugin 'w0rp/ale'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-endwise'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
@@ -140,3 +142,8 @@ map <leader>C :CtrlPClearCache<cr>
 
 " fzf config
 set rtp+=/usr/local/opt/fzf
+
+" Disable linting in elixir so iex works
+let g:ale_linters = {
+      \  'elixir': []
+      \}
