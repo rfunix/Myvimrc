@@ -29,6 +29,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'w0rp/ale'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-endwise'
+Plugin 'maxboisvert/vim-simple-complete'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
